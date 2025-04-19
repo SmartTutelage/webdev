@@ -1,0 +1,830 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: sans-serif;
+}
+
+body {
+    background-color: #d8dee0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.dark-theme {
+    color: #eee4e4;
+    background: #393b3d;
+}
+header{
+    padding: 30px 0 0 0;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.hero-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -2;
+  }
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3); /* adjust darkness */
+    z-index: -1;
+  }
+.hero-section {
+    height: 600px;
+ }
+.hero-text {
+    width: 100%;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;    column-gap: 10px;
+    align-items: center;
+    text-align: center;
+    margin: auto;
+}
+.hero-text .become{
+    font-family: cursive;
+}
+.hero-text .project-ready{
+    font-size: 3.5rem;
+    color: orange;
+    font-family: cursive;
+}
+.hero-text .web-developer{
+    font-size: 4.5rem;
+    color: #16b0ec;
+    font-family: cursive;
+}
+.hero-text .hero-sub{
+    margin-top: 15px;
+    font-size: 18px;
+    line-height: 25px;
+    color: #f1c87c;
+}
+.hero-section h1 {
+    font-size: 64px;
+    color: #e7eee7;
+}
+.special-text, a{
+    color: #e7ecee;
+}
+.cta{
+    margin-top: 30px;
+    display: flex;
+    column-gap: 20px;
+}
+.cta button{
+    /* font-size: 22px; */
+    padding: 15px 22px;
+    border-radius: 10px;
+}
+.cta a{
+    text-decoration:  none;
+    padding: 15px 22px;
+    border-radius: 10px;
+}
+.some-dummy-div {
+    margin: auto;
+}
+nav{
+    width: 100%;
+    position: sticky;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    top: 0;
+    background: #393b3d;
+    z-index: 20;
+}
+nav .logo{
+    margin-left: 20px;
+    object-fit: cover;
+    width: 40px;
+}
+nav span img {
+    width: 80px;
+}
+
+.nav-ul{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 20px;
+    justify-content: end;
+    column-gap: 10px;
+}
+.nav-ul li a{
+    text-decoration: none;
+    padding: 10px 20px;
+}
+.nav-ul li a:hover{
+    color: yellow;
+    background: #000;
+    
+    border-radius: 12px;
+}
+
+.ul-disc em i{
+    margin-right: 5px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #eb3c3c;
+}
+h2{
+    font-size: 20px;
+    background-color: #222324;
+    padding: 10px 25px;
+    width: fit-content;
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 20px;
+    border-left: 5px solid #16b0ec;
+    color: white;
+}
+.course-format-grid{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.course-format {
+    width: 100%;
+    line-height: 30px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    text-align: justify;
+}
+
+.comm-grid{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    align-items: center;
+    text-align: left;
+}
+.comm-grid h3{
+    text-align: left;
+    width: 100%;
+}
+.join a{
+    text-decoration: none;
+    width: 100%;
+    text-align: center;
+}
+.join-span{
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px;
+    gap: 10px;
+    width: 40%;
+}
+.join-span h3{
+    text-align: right;
+}
+.join p{
+    padding-left: 6px;
+    border-left: 4px solid #0f78a1;
+}
+.join {
+    width: 100%;
+    border-radius: 10px;
+    padding: 35px 20px;
+    border: 2px solid #066f8f;
+}
+.join-2{
+    
+    background: url("/assets/images/Slack-logo.png");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.join-1{
+    background: url("/assets/images/whatsapp.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.top-grid {
+    width: 100%;
+    height: 220px;
+    display: grid;
+    column-gap: 20px;
+    grid-template-columns: repeat(2, 1fr);
+}
+.bottom-grid {
+    width: 100%;
+    display: none;
+    column-gap: 20px;
+    row-gap: 20px;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 4fr 3fr;
+}
+.social {
+    object-fit: cover;
+    width: 100%;
+}
+.social>img {
+    width: 100%;
+}
+.div-1 {
+    grid-row-start: 1;
+    grid-row-end: 4;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    border-radius:10px
+
+}
+.div-1b {
+    grid-row-start: 4;
+    grid-row-end: 5;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    border-radius:10px
+
+}
+.div-2 {
+    grid-row-start: 1;
+    grid-row-end: 3;
+    grid-column-start: 4;
+    grid-column-end: 7;
+    border-radius:10px
+}
+.div-3 {
+    grid-row-start: 3;
+    grid-row-end: 5;
+    grid-column-start: 4;
+    grid-column-end: 7;
+    border-radius:10px
+}
+.div-4 {
+    grid-row-start: 5;
+    grid-row-end: 8;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    border-radius:10px
+}
+.div-5 {
+    grid-row-start: 5;
+    grid-row-end: 8;
+    grid-column-start: 3;
+    grid-column-end: 5;
+    border-radius: 10px;
+}
+.div-6 {
+    grid-row-start: 5;
+    grid-row-end: 8;
+    grid-column-start: 5;
+    grid-column-end: 7;
+    border-radius:10px
+}
+.faq-grid {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 30px;
+}
+.faq{
+    width: 100%;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+.faq-image{
+    width: 100%;
+    object-fit: cover;
+    grid-column-start: 3;
+    grid-column-end: 4;
+}
+.faq-image img{
+    width: 100%;
+}
+.faq-quest{
+    width: 100%;
+    margin-top: 20px;    
+}
+.top-q{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background-color: #adb4b8;
+    border: 1px solid skyblue;
+    user-select: none;
+    cursor: pointer;
+    color: #000;
+}
+.top-q h4{
+    font-size: 20px;
+}
+.response{
+    padding: 10px;
+    border: 1px solid skyblue;
+    font-size: 18px;
+}
+.hide-faq{
+    display: none;
+}
+.enrol-div{
+    width: 100%;
+    object-fit: cover;
+
+}
+.enrol-div img{
+    width: 100%;
+    border-radius: 20px;
+}
+.bottom-think{
+    display: flex;
+    justify-content: space-between;
+    margin-top: -80px;
+    padding: 20px;
+}
+.bottom-think a{
+    text-decoration: none;
+    font-size: 20px;
+    padding: 10px 20px;
+    background-color: #414549;
+    border: 2px solid white;
+    color: white;
+}
+
+.main-main{    
+    margin-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+.bxs-quote-left{
+    font-size: 40px;
+}
+/* -------------------
+Skills you'll learn
+-------------------- */
+.section-subtitle{
+    text-align: center;
+}
+.smart-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    gap: 20px;    
+    width: 250px;
+    height: 350px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+.penta-sleeve{
+    color: white;
+    width: 100%;
+    min-height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom-left-radius: 100px;
+    border-bottom-right-radius: 100px;
+}
+.circle-top{
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: contain;
+    margin-top: -35px;
+    padding: 5px;
+    background-color: #f4f6f7;
+}
+.circle-top img{
+    width: 100%;
+    border-radius: 50%;
+    margin: auto;
+}
+.smart-card-content{
+    padding: 10px;
+    font-family: sans-serif;
+    user-select: none;
+    text-align: left;
+}
+.smart-card-content ul li {
+    margin-top: 8px;
+}
+
+/* Color variable cards */
+
+/* Blue card => */
+.blue-smart-card{
+    background-color: #9dddf7;
+    border: 2px solid #1eaae2;
+    color: #054f66;
+}
+.blue-penta-sleeve{
+    background:  linear-gradient(60deg, #145f7c, #1eaae2);
+}
+
+/* Pink Card => */
+.orange-smart-card{
+    background-color: #fcd4c4;
+    border: 2px solid #7e2704;
+    color: #571c05;
+}
+.orange-penta-sleeve{
+    background:  linear-gradient(60deg, #7e2704, #f86604);
+}
+
+/* Green Card => */
+.green-smart-card{
+    background-color: #9df7b1;
+    border: 2px solid #038a20;
+    color: #03300c;
+}
+.green-penta-sleeve{
+    background:  linear-gradient(60deg, #0b4213, #1ee259);
+}
+
+/* Gray Card => */
+.gray-smart-card{
+    background-color: #b6b7b8;
+    border: 2px solid #3c3d3d;
+    color: #03300c;
+}
+.gray-penta-sleeve{
+    background:  linear-gradient(60deg, #1e1f1f, #9b9d9e);
+}
+
+/* ---------------------------------- */
+/* Testimonial section styling */
+/* ---------------------------------- */
+.testimonial-section {
+    width: 100%;
+    padding: 2rem;
+    /* background-color: #f9f9f9; */
+    overflow: hidden;
+  }
+  
+  .testimonial-section h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  
+  .testimonial-carousel-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+  
+  .testimonial-carousel {
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    gap: 2rem;
+    padding: 1rem;
+  }
+  
+  .testimonial-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between ;
+    min-width: 300px;
+    max-width: 300px;
+    background: #f0fafd;
+    border-radius: 1rem;
+    padding: 1rem;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    flex-shrink: 0;
+    border: 1px solid #0998c4;
+  }
+  
+  .student-info {
+    display: flex;
+    align-items: center;
+    margin-top: 1rem;
+    color: #222324;
+  }
+  .testimonial-text {
+    font-size: 1.5rem;
+    font-family: cursive;
+    font-style: italic;
+    margin: auto;
+    color: #222324;
+    text-align: center;
+  }
+  
+  .student-info img {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    margin-right: 0.75rem;
+    border: 2px solid #34658d;
+  }
+  
+  .scroll-btn {
+    background: none;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+    padding: 0 1rem;
+    color: #333;
+    z-index: 1;
+  }
+  
+  .scroll-btn:hover {
+    color: #000;
+  }
+  
+  .scroll-btn.left {
+    margin-left: -1rem;
+  }
+  
+  .scroll-btn.right {
+    margin-right: -1rem;
+  }
+  
+/* Testimonial styling ends here */
+
+
+/* ===================
+Contact Us Section
+=================== */
+.contact-div{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    
+}
+.contact-form{
+    margin: 2rem;
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+
+.contact-form form label {
+    color: #17191a;
+}
+.contact-info{
+    margin: auto;
+    width: 100%;
+    padding: 20px;
+    text-align: center;    
+}
+.contact-info-btn{
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+}
+
+.contact-info a{
+    text-decoration: none;
+    font-size: 18px;
+    padding: 15px 25px;
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    margin-top: 25px;
+}
+.bx-envelope, .bxl-whatsapp-square{
+    font-size: 22px;
+    color: #066f8f;
+    font-weight: bolder;
+}
+.coming-soon-courses{
+    margin-top: 20px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+}
+.image-stack{
+    width: 100%;
+    object-fit: cover;
+}
+.image-stack img{
+    width: 100%;
+    border-radius: 10px;
+}
+.coming-course h1{
+    font-size: 21px;
+    color: #ffffff;
+    padding: 10px;
+    width: 100%;
+    background-color: #09151d;
+}
+/* =======================
+Footer section styling
+======================= */
+
+footer{
+    width: 100%;
+    width: 100%;
+    background: #2f353d;
+    color: #f2f5f7;
+    padding: 30px;
+    box-shadow:1px -15px 20px #5a6068;
+}
+.footer-top{    
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+.foot{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    /* border: 1px solid #efefef; */
+    padding: 30px;
+}
+.left{
+    padding: 0 20px;
+    border-left: 5px solid #086683;
+}
+.footer-quote{
+    font-size: 30px;
+}
+.small{
+    margin-top: 10px;
+    font-size: 20px;
+    text-align: right;
+    font-style: italic;
+    color: #5ea0dd;
+}
+.right{
+    display: flex;
+    flex-direction: column;
+}
+.whatsapp{
+    width: 250px;
+    height: 50px;
+    margin-top: 15px;
+    object-fit: contain;
+    background-color: #f0fafd;
+    border-radius: 10px;
+    padding: 1px 10px;
+}
+.whatsapp img{
+    height: 60px;
+}
+.slack img{
+    height: 60px;
+}
+.footer-bottom {
+    text-align: center;
+}
+.footer-bottom hr {
+    border: 1px solid #5c5f61;
+}
+
+@media only screen and (max-width:1120px){
+    .hero-section {
+        grid-template-columns: 1fr;
+    }
+    .hero-section h1 {
+        font-size: 56px;
+    }
+    .some-dummy-div{
+        display: none;
+    }
+    section h1{
+        font-size: 25px;
+    }
+    section h2{
+        font-size: 20px;
+    }
+    .coming-soon-courses{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+}
+@media only screen and (max-width:960px){
+    .hero-section {
+        grid-template-columns: 1fr;
+    }
+    .hero-section h1 {
+        font-size: 40px;
+    }
+    .cta button{
+        font-size: 18px;
+    }
+    .some-dummy-div{
+        display: none;
+    }
+    section h1 {
+        font-size: 20px;
+        text-align: left;
+        width: 100%;
+    }
+    section h2 {
+        font-size: 18px;
+        text-align: left;
+    }
+    .course-format-grid{
+        grid-template-columns: 1fr;
+    }
+    .top-grid {
+        width: 100%;
+        height: 150px;
+        display: grid;
+        column-gap: 20px;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .skills-grid{
+        grid-template-columns: 1fr;
+    }
+    .bottom-think a{
+        font-size: 16px;
+    }
+    .small {
+        text-align: center;
+    }
+    .footer-quote{
+        text-align: center;
+    }
+    .contact-div{
+        grid-template-columns: 1fr;
+    }
+    .contact-info-btn{
+        flex-direction: column;
+        align-items: center;
+        gap: 0;
+        justify-content: center;
+    }
+    .hero-text .project-ready{
+        font-size: 2.5rem;
+    }
+    .hero-text .web-developer{
+        font-size: 4rem;
+    }
+    .nav-ul li a{
+        display: none;
+    }
+    .coming-soon-courses{
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+    .coming-course h1{
+        margin: auto;
+        margin-bottom: 10px;
+    }
+}
+@media only screen and (max-width:720px){
+    .hero-section {
+        grid-template-columns: 1fr;
+    }
+    .cta button{
+        font-size: 18px;
+    }
+    .some-dummy-div{
+        display: none;
+    }
+    section h1 {
+        font-size: 20px;
+        text-align: left;
+        width: 100%;
+    }
+    .course-format-grid{
+        grid-template-columns: 1fr;
+    }
+    .top-grid {
+        display: none;
+    } 
+    .faq-grid{
+        grid-template-columns: 1fr;;
+    }
+    .faq-image{
+        display: none;
+    }
+    .bottom-grid{
+        display: grid;
+    }
+   
+    .testimonial-section{
+        width: 100%;
+        padding: 0px;
+    }
+    .testimonial-text{
+        font-size: 18px;
+    }
+    .footer-top{
+        grid-template-columns: 1fr;
+    }
+}

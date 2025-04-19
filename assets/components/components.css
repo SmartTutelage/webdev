@@ -1,0 +1,114 @@
+.btn {
+    padding: 8px 10px;
+    font-size: 15px;
+    border-radius: 7px;
+    width: fit-content;
+    color: #000;
+}
+.btn-blue {
+    background-color: #a1d4fd;
+    border: 0.5px solid #3988c9;
+}
+.btn-green {
+    background-color: #a1face;
+    border: 0.5px solid #10643a;
+}
+.btn-red {
+    background-color: #fab6b6;
+    border: 0.5px solid #b80505;
+}
+.btn-gray {
+    background-color: #636a6e;
+    border: 0.5px solid #2e3335;
+    color: white;
+}
+
+.btn:hover {
+    cursor: pointer;
+    border: 2px solid #848a8d;
+}
+
+.container{
+    width: 80%;
+    height: 400px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+section {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    margin: 30px auto;
+    row-gap: 10px;
+}
+article {
+    line-height: 30px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    text-align: justify;
+}
+fieldset{
+    padding: 25px;
+    border-radius: 10px;
+    margin: 20px auto;
+    background-color: #cfdbd9;
+    border: 1px solid #646e6d;
+}
+legend{
+    font-size: 18px;
+    font-style: italic;
+
+}
+
+input, textarea{
+    width: 100%;
+    font-size: 17px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: 1px solid #06627e;
+    background-color: #f2f7f8;
+    margin-bottom: 10px;
+    transition: border 0.3s ease, box-shadow 0.3s ease;
+}
+input:focus, textarea:focus{
+    border: 1px solid #0ef07f;
+    outline: none;
+}
+label{
+    margin-top: 10px;
+}
+@media only screen and (max-width:1120px) {
+    .container{
+        width: 75%;
+        height: 400px; 
+        margin: 20px auto;
+        padding: 20px;
+    }
+    section{
+        width: 80%;
+    }
+}
+@media only screen and (max-width:960px) {
+    .container{
+        width: 80%;
+        height: 400px; 
+        margin: 20px auto;
+        padding: 20px;
+    }
+    section{
+        width: 90%;
+    }
+}
+@media only screen and (max-width:720px) {
+    .container{
+        width: 90%;
+        height: 400px; 
+        margin: 20px auto;
+        padding: 20px;
+    }
+    section{
+        width: 90%;
+    }
+}

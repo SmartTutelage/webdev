@@ -1,0 +1,38 @@
+[
+    {
+      "text": "The move to join this training was a life changer for me! Very patient instructors, you cannot just not know it.",
+      "name": "Joan Efe",
+      "country": "Nigeria",
+      "cohort": "2024 Cohort",
+      "image": "./assets/images/smart-logo.png"
+    },
+    {
+      "text": "I landed an internship position as a react developer a few weeks after graduating, from zero knowledge of coding!",
+      "name": "Mwikali",
+      "country": "Kenya",
+      "cohort": "2024 Cohort",
+      "image": "./assets/images/testimonials/Mwikali.jpg"
+    },
+    {
+      "text": "Highly recommend to anyone looking to learn fast and ready to learn too.",
+      "name": "Stephen",
+      "country": "Ghana",
+      "cohort": "2024 Cohort",
+      "image": "./assets/images/testimonials/Stephen.jpg"
+    },
+    {
+      "text": "I was working as a salesgirl when I enrolled with no knowledge of coding but the story is different today.",
+      "name": "Nantale",
+      "country": "Uganda",
+      "cohort": "2024 Cohort",
+      "image": "./assets/images/smart-logo.png"
+    },
+    {
+      "text": "Just to put it simply, my journey into tech started here. I am glad I took action. With that strong foundation, I am presently mastering my backend now.",
+      "name": "Farouk",
+      "country": "Nigeria",
+      "cohort": "2024 Cohort",
+      "image": "./assets/images/testimonials/Farouk.jpg"
+    }
+  ]
+  
